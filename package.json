@@ -19,5 +19,8 @@
   "homepage": "https://github.com/JanainaRodrigues07/aula-automatizacao-ebac#readme",
   "devDependencies": {
     "cypress": "^10.3.1"
+  },
+  "dependencies": {
+    "faker": "^5.5.3"
   }
 }

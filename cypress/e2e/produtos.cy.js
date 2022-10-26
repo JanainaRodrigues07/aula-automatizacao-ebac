@@ -10,13 +10,13 @@ describe('Funcionalidade Produtos', () => {
     it('Adicionar produto ao carrinho com sucesso', () => {
         var quantidade = 5
 
-        cy.get('[class="product-block grid"]').eq(6).click()
-        cy.get('.button-variable-item-S').click()
-        cy.get(':nth-child(2) > .value > .variable-items-wrapper > .variable-item').click()
+        cy.get('[class="product-block grid"]').eq(5).click()
+        cy.get('.button-variable-item-34').click()
+        cy.get('.button-variable-item-Blue').click()
         cy.get('.input-text').clear().type(quantidade)
         cy.get('.single_add_to_cart_button').click()
 
-        cy.get('.woocommerce-message').should('contain' , quantidade + ' × “Argus All-Weather Tank” foram adicionados no seu carrinho')
+        cy.get('.woocommerce-message').should('contain' , quantidade + ' × “Arcadio Gym Short” foram adicionados no seu carrinho.')
 
     });
 
@@ -37,9 +37,9 @@ describe('Funcionalidade Produtos', () => {
     it('Remover item do carrinho', () => {
         var quantidade = 10
 
-        cy.get('[class="product-block grid"]').eq(6).click()
-        cy.get('.button-variable-item-S').click()
-        cy.get(':nth-child(2) > .value > .variable-items-wrapper > .variable-item').click()
+        cy.get('[class="product-block grid"]').eq(5).click()
+        cy.get('.button-variable-item-34').click()
+        cy.get('.button-variable-item-Blue').click()
         cy.get('.input-text').clear().type(quantidade)
         cy.get('.single_add_to_cart_button').click()
         cy.get('.dropdown-toggle > .text-skin > .icon-basket').click()

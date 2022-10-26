@@ -1,0 +1,11 @@
+pipeline{
+    agent any 
+
+    stages {
+        stages ('Clonar Repositório'){
+            steps{
+                echo 'Iniciando apipeline'
+            }
+        }
+    }
+}
